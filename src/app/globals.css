@@ -2,26 +2,197 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Font Default */
+@font-face {
+  font-family: "DBHeaventRounded";
+  src: url("../../public/assets/fonts/DBHeaventRounded.woff2") format("woff2"),
+    /* Modern Browsers */ url("../../public/assets/fonts/DBHeaventRounded.otf")
+      format("opentype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Font Medium */
+@font-face {
+  font-family: "DBHeaventRoundedMed";
+  src: url("../../public/assets/fonts/DBHeaventRoundedMed.woff2")
+      format("woff2"),
+    /* Modern Browsers */
+      url("../../public/assets/fonts/DBHeaventRoundedMed.otf")
+      format("opentype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* Font Bold */
+@font-face {
+  font-family: "DBHeaventRoundedBold";
+  src: url("../../public/assets/fonts/DBHeaventRoundedBd.woff2") format("woff2"),
+    /* Modern Browsers */
+      url("../../public/assets/fonts/DBHeaventRoundedBd.otf") format("opentype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+.DBHeaventRounded {
+  font-family: "DBHeaventRounded";
+}
+.DBHeaventRoundedMed {
+  font-family: "DBHeaventRoundedMed";
+}
+.DBHeaventRoundedBold {
+  font-family: "DBHeaventRoundedBold";
+}
+
+:root {
+  --clr-primary: #d9042b;
+  --clr-primary-hover: #9a031f;
+  --clr-black-1: #333333;
+  --clr-gray-1: #ebebeb;
+  --clr-gray-2: #f9f9f9;
+  --clr-gray-3: #c0c0c0;
+  --clr-light-blue-1: #05afda;
+  --clr-white: #ffffff;
+
+  --font-display: clamp(3rem, 2.5vw, 3.5rem);
+  --font-h1: clamp(2.5rem, 2.5vw, 3rem);
+  --font-h2: clamp(2.25rem, 2.5vw, 2.5rem);
+  --font-h3: clamp(2rem, 2.5vw, 2.25rem);
+  --font-h4: clamp(1.75rem, 2.5vw, 2rem);
+  --font-h5: clamp(1.5rem, 2.5vw, 1.75rem);
+  --font-h6: clamp(1.375rem, 2.5vw, 1.5rem);
+  --font-body: clamp(1.25rem, 2.5vw, 1.375rem);
+  --font-caption: clamp(1.125rem, 2.5vw, 1.25rem);
+  --font-small: clamp(1rem, 2.5vw, 1.125rem);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  font-family: "DBHeaventRounded";
+  color: var(---clr-black-1);
+  font-size: var(--font-body);
+  font-weight: normal;
+  font-style: normal;
+  transition: 0.5s ease-in-out;
+  overflow-x: hidden;
+  line-height: 1.2;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+body *:is(h1, h2, h3, h4, h5, h6) {
+  font-family: "DBHeaventRoundedBold";
+}
+
+h1 {
+  font-size: clamp(2.5rem, 2.5vw, 3rem);
+}
+h2 {
+  font-size: clamp(2.25rem, 2.5vw, 2.5rem);
+}
+h3 {
+  font-size: clamp(2rem, 2.5vw, 2.25rem);
+}
+h4 {
+  font-size: clamp(1.75rem, 2.5vw, 2rem);
+}
+h5 {
+  font-size: clamp(1.5rem, 2.5vw, 1.75rem);
+}
+h6 {
+  font-size: clamp(1.375rem, 2.5vw, 1.5rem);
+}
+
+.font-display {
+  font-size: clamp(3rem, 2.5vw, 3.5rem);
+}
+.font-h1 {
+  font-size: clamp(2.5rem, 2.5vw, 3rem);
+}
+.font-h2 {
+  font-size: clamp(2.25rem, 2.5vw, 2.5rem);
+}
+.font-h3 {
+  font-size: clamp(2rem, 2.5vw, 2.25rem);
+}
+.font-h4 {
+  font-size: clamp(1.75rem, 2.5vw, 2rem);
+}
+.font-h5 {
+  font-size: clamp(1.5rem, 2.5vw, 1.75rem);
+}
+.font-h6 {
+  font-size: clamp(1.375rem, 2.5vw, 1.5rem);
+}
+.font-body {
+  font-size: clamp(1.25rem, 2.5vw, 1.375rem);
+}
+.font-caption {
+  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+}
+.font-small {
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+}
+
+.text-primary {
+  color: #d9042b;
+}
+.text-primary-hover {
+  color: #9a031f;
+}
+.text-black-1 {
+  color: #333333;
+}
+.text-gray-1 {
+  color: #ebebeb;
+}
+.text-gray-2 {
+  color: #f9f9f9;
+}
+.text-gray-3 {
+  color: #c0c0c0;
+}
+.text-light-blue-1 {
+  color: #05afda;
+}
+.text-white {
+  color: #ffffff;
+}
+
+.bg-primary {
+  background: #d9042b;
+}
+.bg-primary-hover {
+  background: #9a031f;
+}
+.bg-black-1 {
+  background: #333333;
+}
+.bg-gray-1 {
+  background: #ebebeb;
+}
+.bg-gray-2 {
+  background: #f9f9f9;
+}
+.bg-gray-3 {
+  background: #c0c0c0;
+}
+.bg-light-blue-1 {
+  background: #05afda;
+}
+.bg-white {
+  background: #ffffff;
+}
+
+.calc {
+  margin: 0 calc(-50vw + 50%);
+  max-width: 100vw;
+  width: 100vw;
+}
+
+.button {
+  background: var(--clr-primary);
+}
+.button:hover {
+  background: var(--clr-primary-hover);
 }

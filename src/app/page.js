@@ -1,3 +1,8 @@
 export default function Home() {
-  return <>Lorem</>;
+  return (
+    <>
+      lorem ๆๆๆ
+      <h1>lorem</h1>
+    </>
+  );
 }

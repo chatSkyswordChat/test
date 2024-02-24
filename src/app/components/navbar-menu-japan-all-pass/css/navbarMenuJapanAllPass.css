@@ -1,0 +1,13 @@
+#navbar-dropdown :is(a, button):hover,
+#navbar-dropdown .active {
+  color: var(--clr-primary);
+}
+
+#navbar-dropdown ul ul a:hover {
+  color: var(--clr-Black-1);
+}
+
+.open-menu:hover {
+  background: var(--clr-primary);
+  color: var(--clr-white);
+}
