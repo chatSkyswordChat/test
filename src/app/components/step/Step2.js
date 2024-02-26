@@ -1,3 +1,4 @@
+"use client";
 import "./css/order.css";
 
 export default function Step2({ handleNextStep, handlePrevStep }) {
