@@ -16,8 +16,9 @@ export default function RootLayout({ children }) {
         <NavbarMenuJapanAllPass />
         <main className="container mx-auto px-4 my-8 md:my-16">{children}</main>
         <FooterJapanAllPass />
+
+        <script src="../path/to/flowbite/dist/datepicker.js"></script>
         <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-        {/* <script src="../path/to/flowbite/dist/datepicker.js"></script> */}
       </body>
     </html>
   );
