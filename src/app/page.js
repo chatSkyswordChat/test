@@ -1,8 +1,7 @@
 export default function Home() {
   return (
     <>
-      lorem ๆๆๆ
-      <h1>lorem</h1>
+      <h1>lorem lorem</h1>
     </>
   );
 }

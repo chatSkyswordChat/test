@@ -46,7 +46,7 @@ export default function FooterJapanAllPass() {
                     target="_blank"
                   >
                     <Image
-                      src="/assets/icons/facebook.svg"
+                      src="/assets/icons/social/facebook.svg"
                       width={35}
                       height={35}
                       alt="facebook"
@@ -58,7 +58,7 @@ export default function FooterJapanAllPass() {
                     target="_blank"
                   >
                     <Image
-                      src="/assets/icons/youtube.svg"
+                      src="/assets/icons/social/youtube.svg"
                       width={35}
                       height={35}
                       alt="youtube"
@@ -70,7 +70,7 @@ export default function FooterJapanAllPass() {
                     target="_blank"
                   >
                     <Image
-                      src="/assets/icons/tiktok.svg"
+                      src="/assets/icons/social/tiktok.svg"
                       width={35}
                       height={35}
                       alt="tiktok"
@@ -82,7 +82,7 @@ export default function FooterJapanAllPass() {
                     target="_blank"
                   >
                     <Image
-                      src="/assets/icons/line.svg"
+                      src="/assets/icons/social/line.svg"
                       width={35}
                       height={35}
                       alt="line"

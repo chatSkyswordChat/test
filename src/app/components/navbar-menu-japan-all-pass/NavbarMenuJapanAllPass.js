@@ -28,7 +28,7 @@ export default function NavbarMenuJapanAllPass() {
 
         {/* Open Menu Mobile */}
         <button
-          className="lg:hidden block rounded-lg w-11 h-11 flex items-center justify-center open-menu"
+          className="lg:hidden block rounded-lg w-11 h-11 flex items-center justify-center hover:text-white hover:bg-primary-100"
           type="button"
           data-drawer-target="drawer-navigation"
           data-drawer-show="drawer-navigation"
