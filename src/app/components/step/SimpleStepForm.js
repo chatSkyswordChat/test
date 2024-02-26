@@ -37,12 +37,12 @@ export default function SimpleStepForm({ showStepNumber }) {
         <section className="flex flex-warp gap-8">
           {stepsArray.map((item, i) => (
             <div
+              key={i}
               className={`flex justify-center items-center flex-col w-1/3 min-h-28 rounded-lg gap-3 p-4 ${
                 item === step ? "bg-red-50 border border-red-500" : " "
               }`}
             >
               <div
-                key={i}
                 className={`flex justify-center items-center w-10 h-10 rounded-full  ${
                   item === step ? "bg-primary" : "border border-black-500"
                 }`}
