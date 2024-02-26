@@ -1,7 +1,9 @@
 export default function Home() {
   return (
     <>
-      <h1>lorem lorem</h1>
+      <h1>
+        <a href="/orderinformation">lorem lorem</a>
+      </h1>
     </>
   );
 }
