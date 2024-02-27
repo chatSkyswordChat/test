@@ -1,5 +1,5 @@
 import "./globals.css";
-import NavbarMenuJapanAllPass from "@/app/components/navbar-menu-japan-all-pass/NavbarMenuJapanAllPass";
+// import NavbarMenuJapanAllPass from "@/app/components/navbar-menu-japan-all-pass/NavbarMenuJapanAllPass";
 import FooterJapanAllPass from "@/app/components/footer-japan-all-pass/FooterJapanAllPass";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -13,12 +13,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <NavbarMenuJapanAllPass />
+        {/* <NavbarMenuJapanAllPass /> */}
         <main className="container mx-auto px-4 my-8 md:my-16">{children}</main>
         <FooterJapanAllPass />
 
-        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-        <script src="../path/to/flowbite/dist/datepicker.js"></script>
+        {/* <script src="../path/to/flowbite/dist/flowbite.min.js"></script> */}
       </body>
     </html>
   );
