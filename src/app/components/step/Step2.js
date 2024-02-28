@@ -250,7 +250,7 @@ export default function Step2({ handleNextStep, handlePrevStep }) {
       <div className="flex justify-between mt-8">
         <button onClick={handlePrevStep}>ย้อนกลับ</button>{" "}
         <button
-          className="text-white bg-primary rounded-lg w-[140px] h-[52px] "
+          className="text-white bg-primary-100 hover:bg-primary-200 rounded-lg w-[140px] h-[52px] "
           onClick={handleNextStep}
         >
           ถัดไป
